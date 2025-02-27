@@ -33,8 +33,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     local Tab1o = MakeTab({Name = "Script Full CN"})
     local Tab2o = MakeTab({Name = "Script Auto Chest"})
     local Tab3o = MakeTab({Name = "Script Auto Nhặt Trái"})
-    local Tab1o = MakeTab({Name = "Script Aimbot:)"})
-     
+    local Tab4o = MakeTab({Name = "Script Aimbot:)"})
+    local Tab5o = MakeTab({Name = "Script Fix Lag"})
 ------- BUTTON
     
     AddButton(Tab1o, {
@@ -46,5 +46,16 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Xero Hub",
+    Callback = function()
+	  local Settings = {
+  getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
   end
   })
